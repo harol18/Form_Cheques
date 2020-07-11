@@ -1,0 +1,5 @@
+Pendientes por ajustar:
+la direccion de correo del envio.
+la contraseña de dicho correo.
+los destinatarios de la copia del correo.
+todo tenerlo en una base de datos y traerlo automaticamente al cargar el formulario.
