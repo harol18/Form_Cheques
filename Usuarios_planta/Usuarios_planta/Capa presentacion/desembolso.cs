@@ -23,9 +23,9 @@ namespace Usuarios_planta
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 44);
+            leftBorderBtn.Size = new Size(7, 60);
             panelSideMenu.Controls.Add(leftBorderBtn);
-            hideSubMenu();
+            
 
             this.Text = string.Empty;
             this.ControlBox = false; //quitar caja de control
@@ -38,9 +38,9 @@ namespace Usuarios_planta
             public static Color color1 = Color.FromArgb(251, 187, 33);
             public static Color color2 = Color.FromArgb(52, 179, 29);
             public static Color color3 = Color.FromArgb(253, 138, 114);
-            public static Color color4 = Color.FromArgb(53, 41, 237);
+            public static Color color4 = Color.FromArgb(37, 146, 110);
             public static Color color5 = Color.FromArgb(56, 171, 179);
-            public static Color color6 = Color.FromArgb(56, 171, 179);
+            
 
         }
 
@@ -78,33 +78,6 @@ namespace Usuarios_planta
             }
         }
 
-        public void hideSubMenu()
-        {
-            panelCheques.Visible = false;
-            
-        }
-
-        public void showSubMenu(Panel subMenu)
-        {
-            if (subMenu.Visible == false)
-            {
-                hideSubMenu();
-                subMenu.Visible = true;
-            }
-            else
-                subMenu.Visible = false;
-        }
-
-        private void BtnCheques_Click(object sender, EventArgs e)
-        {
-            showSubMenu(panelCheques);
-        }
-        private void BtnGiros_Click(object sender, EventArgs e)
-        {
-            Form formulario = new FormGiros();
-            formulario.Show();
-            hideSubMenu();
-        }
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -113,34 +86,12 @@ namespace Usuarios_planta
        
         private void BtnCheques_MouseHover(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color2);
-            labelInicio.Text = BtnCheques.Text;
-            icon2.IconChar = BtnCheques.IconChar;
-            icon2.IconColor = BtnCheques.IconColor;
+            ActivateButton(sender, RGBColors.color1);
+            labelInicio.Text = BtnAsignacion.Text;
+            icon2.IconChar = BtnAsignacion.IconChar;
+            icon2.IconColor = BtnAsignacion.IconColor;
             
         }
-
-        private void BtnChequesCF_Click(object sender, EventArgs e)
-        {
-            hideSubMenu();
-        }
-
-         private void BtnGiros_MouseHover_1(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color2);
-            labelInicio.Text = BtnGiros.Text;
-            icon2.IconChar = BtnGiros.IconChar;
-            icon2.IconColor = BtnGiros.IconColor;
-        }
-
-        private void BtnChequesCF_MouseHover(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color2);
-            labelInicio.Text = BtnChequesCF.Text;
-            icon2.IconChar = BtnChequesCF.IconChar;
-            icon2.IconColor = BtnChequesCF.IconColor;
-        }
-
         private void BtnSalir_MouseHover(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
@@ -157,17 +108,41 @@ namespace Usuarios_planta
             this.panelContenedor.Tag = fh;
             fh.Show();
         }
-        private void iconButton1_Click(object sender, EventArgs e)
+
+
+        private void Btnlogin_MouseHover(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color4);
+            labelInicio.Text = Btnlogin.Text;
+            icon2.IconChar = Btnlogin.IconChar;
+            icon2.IconColor = Btnlogin.IconColor;
+        }
+
+        private void Btngiros_Click(object sender, EventArgs e)
+        {
+            Form formulario = new FormGiros();
+            formulario.Show();
+        }
+
+        private void Btngiros_MouseHover(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color3);
+            labelInicio.Text = Btngiros.Text;
+            icon2.IconChar = Btngiros.IconChar;
+            icon2.IconColor = Btngiros.IconColor;
+        }
+
+        private void Btnlogin_Click(object sender, EventArgs e)
         {
             AbrirFormHijo(new Informes());
         }
 
-        private void Btnlogin_MouseHover(object sender, EventArgs e)
+        private void Btncheques_MouseHover_1(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
-            labelInicio.Text = Btnlogin.Text;
-            icon2.IconChar = Btnlogin.IconChar;
-            icon2.IconColor = Btnlogin.IconColor;
+            ActivateButton(sender, RGBColors.color4);
+            labelInicio.Text = Btncheques.Text;
+            icon2.IconChar = Btncheques.IconChar;
+            icon2.IconColor = Btncheques.IconColor;
         }
     }
 }

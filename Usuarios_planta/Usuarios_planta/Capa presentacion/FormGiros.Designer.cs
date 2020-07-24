@@ -205,6 +205,7 @@
             // TxtAsunto
             // 
             this.TxtAsunto.BackColor = System.Drawing.SystemColors.Menu;
+            this.TxtAsunto.Enabled = false;
             this.TxtAsunto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtAsunto.Location = new System.Drawing.Point(442, 49);
             this.TxtAsunto.Multiline = true;
@@ -294,6 +295,7 @@
             // Txtcedula
             // 
             this.Txtcedula.BackColor = System.Drawing.SystemColors.Menu;
+            this.Txtcedula.Enabled = false;
             this.Txtcedula.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txtcedula.Location = new System.Drawing.Point(277, 20);
             this.Txtcedula.Multiline = true;
@@ -305,6 +307,7 @@
             // Txtnombre
             // 
             this.Txtnombre.BackColor = System.Drawing.SystemColors.Menu;
+            this.Txtnombre.Enabled = false;
             this.Txtnombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txtnombre.Location = new System.Drawing.Point(556, 20);
             this.Txtnombre.Multiline = true;
@@ -317,6 +320,7 @@
             // Txtcuenta
             // 
             this.Txtcuenta.BackColor = System.Drawing.SystemColors.Menu;
+            this.Txtcuenta.Enabled = false;
             this.Txtcuenta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txtcuenta.Location = new System.Drawing.Point(76, 49);
             this.Txtcuenta.MaxLength = 20;
@@ -386,6 +390,7 @@
             // Txtcorreo_apoyo
             // 
             this.Txtcorreo_apoyo.BackColor = System.Drawing.SystemColors.Menu;
+            this.Txtcorreo_apoyo.Enabled = false;
             this.Txtcorreo_apoyo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txtcorreo_apoyo.Location = new System.Drawing.Point(684, 46);
             this.Txtcorreo_apoyo.Multiline = true;
@@ -407,6 +412,7 @@
             // Txtcorreo_coordinador
             // 
             this.Txtcorreo_coordinador.BackColor = System.Drawing.SystemColors.Menu;
+            this.Txtcorreo_coordinador.Enabled = false;
             this.Txtcorreo_coordinador.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txtcorreo_coordinador.Location = new System.Drawing.Point(131, 46);
             this.Txtcorreo_coordinador.Multiline = true;
@@ -428,6 +434,7 @@
             // Txtcoordinador
             // 
             this.Txtcoordinador.BackColor = System.Drawing.SystemColors.Menu;
+            this.Txtcoordinador.Enabled = false;
             this.Txtcoordinador.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txtcoordinador.Location = new System.Drawing.Point(684, 19);
             this.Txtcoordinador.MaxLength = 100;
@@ -441,6 +448,7 @@
             // Txtciudad
             // 
             this.Txtciudad.BackColor = System.Drawing.SystemColors.Menu;
+            this.Txtciudad.Enabled = false;
             this.Txtciudad.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txtciudad.Location = new System.Drawing.Point(587, 74);
             this.Txtciudad.MaxLength = 30;
@@ -493,6 +501,7 @@
             // Txtnom_gestor
             // 
             this.Txtnom_gestor.BackColor = System.Drawing.SystemColors.Menu;
+            this.Txtnom_gestor.Enabled = false;
             this.Txtnom_gestor.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txtnom_gestor.Location = new System.Drawing.Point(304, 19);
             this.Txtnom_gestor.MaxLength = 100;
@@ -515,6 +524,7 @@
             // Txtcod_oficina
             // 
             this.Txtcod_oficina.BackColor = System.Drawing.SystemColors.Menu;
+            this.Txtcod_oficina.Enabled = false;
             this.Txtcod_oficina.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txtcod_oficina.Location = new System.Drawing.Point(64, 74);
             this.Txtcod_oficina.Multiline = true;
@@ -527,6 +537,7 @@
             // Txtnom_oficina
             // 
             this.Txtnom_oficina.BackColor = System.Drawing.SystemColors.Menu;
+            this.Txtnom_oficina.Enabled = false;
             this.Txtnom_oficina.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txtnom_oficina.Location = new System.Drawing.Point(229, 74);
             this.Txtnom_oficina.Multiline = true;
@@ -538,6 +549,7 @@
             // Txtscoring
             // 
             this.Txtscoring.BackColor = System.Drawing.SystemColors.Menu;
+            this.Txtscoring.Enabled = false;
             this.Txtscoring.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txtscoring.Location = new System.Drawing.Point(66, 19);
             this.Txtscoring.MaxLength = 10;
@@ -1411,6 +1423,7 @@
             // TxtValor1
             // 
             this.TxtValor1.BackColor = System.Drawing.SystemColors.Menu;
+            this.TxtValor1.Enabled = false;
             this.TxtValor1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtValor1.Location = new System.Drawing.Point(814, 37);
             this.TxtValor1.MaxLength = 10;
@@ -1423,6 +1436,7 @@
             // TxtNit1
             // 
             this.TxtNit1.BackColor = System.Drawing.SystemColors.Menu;
+            this.TxtNit1.Enabled = false;
             this.TxtNit1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNit1.Location = new System.Drawing.Point(650, 37);
             this.TxtNit1.MaxLength = 10;
@@ -1435,6 +1449,7 @@
             // TxtNom_entidad1
             // 
             this.TxtNom_entidad1.BackColor = System.Drawing.SystemColors.Menu;
+            this.TxtNom_entidad1.Enabled = false;
             this.TxtNom_entidad1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNom_entidad1.Location = new System.Drawing.Point(231, 37);
             this.TxtNom_entidad1.MaxLength = 10;
@@ -1447,6 +1462,7 @@
             // Txtobligacion1
             // 
             this.Txtobligacion1.BackColor = System.Drawing.SystemColors.Menu;
+            this.Txtobligacion1.Enabled = false;
             this.Txtobligacion1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txtobligacion1.Location = new System.Drawing.Point(28, 37);
             this.Txtobligacion1.MaxLength = 10;
@@ -1576,6 +1592,7 @@
             // Txtto
             // 
             this.Txtto.BackColor = System.Drawing.SystemColors.Menu;
+            this.Txtto.Enabled = false;
             this.Txtto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txtto.Location = new System.Drawing.Point(54, 70);
             this.Txtto.MaxLength = 100;
@@ -1607,6 +1624,7 @@
             this.Name = "FormGiros";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGiros";
+            this.Load += new System.EventHandler(this.FormGiros_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

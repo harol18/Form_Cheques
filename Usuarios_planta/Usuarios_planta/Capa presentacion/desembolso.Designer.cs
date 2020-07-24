@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.Btngiros = new FontAwesome.Sharp.IconButton();
+            this.Btncheques = new FontAwesome.Sharp.IconButton();
             this.Btnlogin = new FontAwesome.Sharp.IconButton();
             this.BtnSalir = new FontAwesome.Sharp.IconButton();
-            this.panelCheques = new System.Windows.Forms.Panel();
-            this.BtnChequesCF = new FontAwesome.Sharp.IconButton();
-            this.BtnGiros = new FontAwesome.Sharp.IconButton();
-            this.BtnCheques = new FontAwesome.Sharp.IconButton();
+            this.BtnAsignacion = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelTitulo = new System.Windows.Forms.Panel();
@@ -42,7 +41,6 @@
             this.icon2 = new FontAwesome.Sharp.IconPictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.panelSideMenu.SuspendLayout();
-            this.panelCheques.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelTitulo.SuspendLayout();
@@ -52,10 +50,11 @@
             // panelSideMenu
             // 
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(84)))));
+            this.panelSideMenu.Controls.Add(this.Btngiros);
+            this.panelSideMenu.Controls.Add(this.Btncheques);
             this.panelSideMenu.Controls.Add(this.Btnlogin);
             this.panelSideMenu.Controls.Add(this.BtnSalir);
-            this.panelSideMenu.Controls.Add(this.panelCheques);
-            this.panelSideMenu.Controls.Add(this.BtnCheques);
+            this.panelSideMenu.Controls.Add(this.BtnAsignacion);
             this.panelSideMenu.Controls.Add(this.panel2);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
@@ -63,10 +62,60 @@
             this.panelSideMenu.Size = new System.Drawing.Size(146, 519);
             this.panelSideMenu.TabIndex = 0;
             // 
+            // Btngiros
+            // 
+            this.Btngiros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btngiros.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Btngiros.FlatAppearance.BorderSize = 0;
+            this.Btngiros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btngiros.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.Btngiros.Font = new System.Drawing.Font("SF Pro Display", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btngiros.ForeColor = System.Drawing.Color.Transparent;
+            this.Btngiros.IconChar = FontAwesome.Sharp.IconChar.MailBulk;
+            this.Btngiros.IconColor = System.Drawing.Color.Gainsboro;
+            this.Btngiros.IconSize = 30;
+            this.Btngiros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btngiros.Location = new System.Drawing.Point(0, 220);
+            this.Btngiros.Name = "Btngiros";
+            this.Btngiros.Padding = new System.Windows.Forms.Padding(1, 0, 20, 0);
+            this.Btngiros.Rotation = 0D;
+            this.Btngiros.Size = new System.Drawing.Size(146, 60);
+            this.Btngiros.TabIndex = 11;
+            this.Btngiros.Text = "Envio Giros";
+            this.Btngiros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btngiros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Btngiros.UseVisualStyleBackColor = true;
+            this.Btngiros.Click += new System.EventHandler(this.Btngiros_Click);
+            this.Btngiros.MouseHover += new System.EventHandler(this.Btngiros_MouseHover);
+            // 
+            // Btncheques
+            // 
+            this.Btncheques.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btncheques.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Btncheques.FlatAppearance.BorderSize = 0;
+            this.Btncheques.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btncheques.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.Btncheques.Font = new System.Drawing.Font("SF Pro Display", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btncheques.ForeColor = System.Drawing.Color.Transparent;
+            this.Btncheques.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.Btncheques.IconColor = System.Drawing.Color.Gainsboro;
+            this.Btncheques.IconSize = 30;
+            this.Btncheques.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btncheques.Location = new System.Drawing.Point(0, 160);
+            this.Btncheques.Name = "Btncheques";
+            this.Btncheques.Padding = new System.Windows.Forms.Padding(1, 0, 20, 0);
+            this.Btncheques.Rotation = 0D;
+            this.Btncheques.Size = new System.Drawing.Size(146, 60);
+            this.Btncheques.TabIndex = 10;
+            this.Btncheques.Text = "Cheques";
+            this.Btncheques.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btncheques.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Btncheques.UseVisualStyleBackColor = true;
+            this.Btncheques.MouseHover += new System.EventHandler(this.Btncheques_MouseHover_1);
+            // 
             // Btnlogin
             // 
             this.Btnlogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btnlogin.Dock = System.Windows.Forms.DockStyle.Top;
             this.Btnlogin.FlatAppearance.BorderSize = 0;
             this.Btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btnlogin.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -76,17 +125,17 @@
             this.Btnlogin.IconColor = System.Drawing.Color.Gainsboro;
             this.Btnlogin.IconSize = 29;
             this.Btnlogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btnlogin.Location = new System.Drawing.Point(0, 206);
+            this.Btnlogin.Location = new System.Drawing.Point(0, 283);
             this.Btnlogin.Name = "Btnlogin";
             this.Btnlogin.Padding = new System.Windows.Forms.Padding(1, 0, 20, 0);
             this.Btnlogin.Rotation = 0D;
-            this.Btnlogin.Size = new System.Drawing.Size(146, 44);
+            this.Btnlogin.Size = new System.Drawing.Size(146, 60);
             this.Btnlogin.TabIndex = 9;
             this.Btnlogin.Text = "Login";
             this.Btnlogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btnlogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btnlogin.UseVisualStyleBackColor = true;
-            this.Btnlogin.Click += new System.EventHandler(this.iconButton1_Click);
+            this.Btnlogin.Click += new System.EventHandler(this.Btnlogin_Click);
             this.Btnlogin.MouseHover += new System.EventHandler(this.Btnlogin_MouseHover);
             // 
             // BtnSalir
@@ -115,95 +164,30 @@
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             this.BtnSalir.MouseHover += new System.EventHandler(this.BtnSalir_MouseHover);
             // 
-            // panelCheques
+            // BtnAsignacion
             // 
-            this.panelCheques.Controls.Add(this.BtnChequesCF);
-            this.panelCheques.Controls.Add(this.BtnGiros);
-            this.panelCheques.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelCheques.Location = new System.Drawing.Point(0, 144);
-            this.panelCheques.Name = "panelCheques";
-            this.panelCheques.Size = new System.Drawing.Size(146, 62);
-            this.panelCheques.TabIndex = 4;
-            // 
-            // BtnChequesCF
-            // 
-            this.BtnChequesCF.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnChequesCF.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnChequesCF.FlatAppearance.BorderSize = 0;
-            this.BtnChequesCF.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(118)))), ((int)(((byte)(176)))));
-            this.BtnChequesCF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(81)))));
-            this.BtnChequesCF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnChequesCF.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.BtnChequesCF.Font = new System.Drawing.Font("SF Pro Display", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnChequesCF.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnChequesCF.IconChar = FontAwesome.Sharp.IconChar.MoneyCheck;
-            this.BtnChequesCF.IconColor = System.Drawing.Color.Gainsboro;
-            this.BtnChequesCF.IconSize = 24;
-            this.BtnChequesCF.Location = new System.Drawing.Point(0, 30);
-            this.BtnChequesCF.Name = "BtnChequesCF";
-            this.BtnChequesCF.Padding = new System.Windows.Forms.Padding(44, 0, 0, 0);
-            this.BtnChequesCF.Rotation = 0D;
-            this.BtnChequesCF.Size = new System.Drawing.Size(146, 30);
-            this.BtnChequesCF.TabIndex = 1;
-            this.BtnChequesCF.Text = "Cheques";
-            this.BtnChequesCF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnChequesCF.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnChequesCF.UseVisualStyleBackColor = true;
-            this.BtnChequesCF.Click += new System.EventHandler(this.BtnChequesCF_Click);
-            this.BtnChequesCF.MouseHover += new System.EventHandler(this.BtnChequesCF_MouseHover);
-            // 
-            // BtnGiros
-            // 
-            this.BtnGiros.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnGiros.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnGiros.FlatAppearance.BorderSize = 0;
-            this.BtnGiros.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(118)))), ((int)(((byte)(176)))));
-            this.BtnGiros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(27)))), ((int)(((byte)(81)))));
-            this.BtnGiros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGiros.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.BtnGiros.Font = new System.Drawing.Font("SF Pro Display", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGiros.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnGiros.IconChar = FontAwesome.Sharp.IconChar.MailBulk;
-            this.BtnGiros.IconColor = System.Drawing.Color.Gainsboro;
-            this.BtnGiros.IconSize = 24;
-            this.BtnGiros.Location = new System.Drawing.Point(0, 0);
-            this.BtnGiros.Name = "BtnGiros";
-            this.BtnGiros.Padding = new System.Windows.Forms.Padding(44, 0, 0, 0);
-            this.BtnGiros.Rotation = 0D;
-            this.BtnGiros.Size = new System.Drawing.Size(146, 30);
-            this.BtnGiros.TabIndex = 0;
-            this.BtnGiros.Text = "Giros";
-            this.BtnGiros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGiros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnGiros.UseVisualStyleBackColor = true;
-            this.BtnGiros.Click += new System.EventHandler(this.BtnGiros_Click);
-            this.BtnGiros.MouseHover += new System.EventHandler(this.BtnGiros_MouseHover_1);
-            // 
-            // BtnCheques
-            // 
-            this.BtnCheques.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnCheques.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnCheques.FlatAppearance.BorderSize = 0;
-            this.BtnCheques.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCheques.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.BtnCheques.Font = new System.Drawing.Font("SF Pro Display", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCheques.ForeColor = System.Drawing.Color.Transparent;
-            this.BtnCheques.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
-            this.BtnCheques.IconColor = System.Drawing.Color.Gainsboro;
-            this.BtnCheques.IconSize = 30;
-            this.BtnCheques.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCheques.Location = new System.Drawing.Point(0, 100);
-            this.BtnCheques.Name = "BtnCheques";
-            this.BtnCheques.Padding = new System.Windows.Forms.Padding(1, 0, 20, 0);
-            this.BtnCheques.Rotation = 0D;
-            this.BtnCheques.Size = new System.Drawing.Size(146, 44);
-            this.BtnCheques.TabIndex = 3;
-            this.BtnCheques.Text = "Cheques";
-            this.BtnCheques.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCheques.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnCheques.UseVisualStyleBackColor = true;
-            this.BtnCheques.Click += new System.EventHandler(this.BtnCheques_Click);
-            this.BtnCheques.MouseHover += new System.EventHandler(this.BtnCheques_MouseHover);
+            this.BtnAsignacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAsignacion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnAsignacion.FlatAppearance.BorderSize = 0;
+            this.BtnAsignacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAsignacion.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.BtnAsignacion.Font = new System.Drawing.Font("SF Pro Display", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAsignacion.ForeColor = System.Drawing.Color.Transparent;
+            this.BtnAsignacion.IconChar = FontAwesome.Sharp.IconChar.UserEdit;
+            this.BtnAsignacion.IconColor = System.Drawing.Color.Gainsboro;
+            this.BtnAsignacion.IconSize = 30;
+            this.BtnAsignacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAsignacion.Location = new System.Drawing.Point(0, 100);
+            this.BtnAsignacion.Name = "BtnAsignacion";
+            this.BtnAsignacion.Padding = new System.Windows.Forms.Padding(1, 0, 20, 0);
+            this.BtnAsignacion.Rotation = 0D;
+            this.BtnAsignacion.Size = new System.Drawing.Size(146, 60);
+            this.BtnAsignacion.TabIndex = 3;
+            this.BtnAsignacion.Text = "Asignacion";
+            this.BtnAsignacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAsignacion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAsignacion.UseVisualStyleBackColor = true;
+            this.BtnAsignacion.MouseHover += new System.EventHandler(this.BtnCheques_MouseHover);
             // 
             // panel2
             // 
@@ -282,7 +266,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "desembolso";
             this.panelSideMenu.ResumeLayout(false);
-            this.panelCheques.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelTitulo.ResumeLayout(false);
@@ -296,16 +279,15 @@
 
         private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panelCheques;
-        private FontAwesome.Sharp.IconButton BtnGiros;
-        private FontAwesome.Sharp.IconButton BtnChequesCF;
         private FontAwesome.Sharp.IconButton BtnSalir;
         private System.Windows.Forms.Panel panelTitulo;
         private System.Windows.Forms.Label labelInicio;
         private FontAwesome.Sharp.IconPictureBox icon2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panelContenedor;
-        private FontAwesome.Sharp.IconButton BtnCheques;
+        private FontAwesome.Sharp.IconButton BtnAsignacion;
         private FontAwesome.Sharp.IconButton Btnlogin;
+        private FontAwesome.Sharp.IconButton Btngiros;
+        private FontAwesome.Sharp.IconButton Btncheques;
     }
 }

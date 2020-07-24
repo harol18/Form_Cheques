@@ -24,7 +24,7 @@ namespace Usuarios_planta.Formularios
 {
     public partial class FormGiros : Form
     {
-        MySqlConnection con = new MySqlConnection("server=localhost;Uid=root;password=;database=dblibranza;port=3306;persistsecurityinfo=True;");
+        MySqlConnection con = new MySqlConnection("server=localhost;Uid=root;password=Indr42020$;database=dblibranza;port=3306;persistsecurityinfo=True;");
         Comandos cmds = new Comandos();
         private string To;
         private string Subject;
@@ -265,6 +265,11 @@ namespace Usuarios_planta.Formularios
             MessageBox.Show("Ok correo enviado");
             cmds.Insertar_giro(TxtRadicado, Txtcedula, Txtnombre, Txtnom_oficina);
             
+        }
+
+        private void FormGiros_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
