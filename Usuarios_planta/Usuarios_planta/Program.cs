@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Usuarios_planta.Capa_presentacion;
+//using Usuarios_planta.Capa_presentacion;
 
 namespace Usuarios_planta
 {

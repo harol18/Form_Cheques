@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Usuarios_planta.Formularios;
-using Usuarios_planta.Capa_presentacion;
+//using Usuarios_planta.Capa_presentacion;
 using FontAwesome.Sharp; // libreria para utilizar los iconbutton y los iconos
 
 namespace Usuarios_planta

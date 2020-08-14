@@ -16,7 +16,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Net.Security;
 using System.Net.Mail;
 using System.Net.Mime;
-//using Outlook = Microsoft.Office.Interop.Outlook;
+
 
 
 
@@ -25,6 +25,7 @@ namespace Usuarios_planta.Formularios
     public partial class FormGiros : Form
     {
         MySqlConnection con = new MySqlConnection("server=localhost;Uid=root;password=Indr42020$;database=dblibranza;port=3306;persistsecurityinfo=True;");
+        //MySqlConnection con = new MySqlConnection("server=82.2.121.99;Uid=userapp;password=userapp;database=dblibranza;port=3306;persistsecurityinfo=True;");
         Comandos cmds = new Comandos();
         private string To;
         private string Subject;
@@ -46,11 +47,6 @@ namespace Usuarios_planta.Formularios
             dataGridView1.Rows.Add(TxtRadicado.Text, Txtcedula.Text);//agregar informacion de los textbox en el datagridview
         }
 
-        private void BtnSalir_Click(object sender, EventArgs e)
-        {
-            BtnSalir.BackColor = Color.FromArgb(251, 187, 33);
-            this.Close();
-        }
         DateTime hoy = DateTime.Today;
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -206,11 +202,10 @@ namespace Usuarios_planta.Formularios
 
         private void BtnLimpiar_Click(object sender, EventArgs e)
         {
-            limpiar limpiar = new limpiar(); //llamo la clase para limpiar todos los textbox que se encuentran en el groupbox1
-            limpiar.BorrarCampos(groupBox1);
-            limpiar.BorrarCampos(groupBox2);
-            limpiar.BorrarCampos(groupBox4);
-            dataGridView1.Rows.Clear();
+
+            this.Close();
+            Form formulario = new FormGiros();
+            formulario.Show();
         }
 
         private void Txtnombre_TextChanged(object sender, EventArgs e)
@@ -269,7 +264,63 @@ namespace Usuarios_planta.Formularios
 
         private void FormGiros_Load(object sender, EventArgs e)
         {
+            MySqlCommand comando = new MySqlCommand("SELECT * FROM informacion_correo", con);
+            con.Open();
+            MySqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                Txtcorreo_envio.Text = registro["de"].ToString();
+                Txtcontraseña_correo.Text = registro["contraseña"].ToString();
+                Txtcorreo_copia.Text = registro["copia"].ToString();
+                lbto.Visible = false;
+                lbcopy.Visible = false;
+                lbpass.Visible = false;
+            }
+            con.Close();
 
+            Txtcorreo_envio.Visible = false;
+            Txtcontraseña_correo.Visible = false;
+            Txtcorreo_copia.Visible = false;
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Add(TxtRadicado.Text, Txtcod_oficina.Text, hoy.ToShortDateString(), Txtnom_oficina.Text, Txtciudad.Text, Txtcedula.Text, Txtnombre.Text, TxtNit1.Text, TxtNom_entidad1.Text, TxtValor1.Text, Txtobligacion1.Text, Txtscoring.Text, Txtnom_gestor.Text, Txtcoordinador.Text, Txtcuenta.Text, Txtref.Text);//agregar informacion de los textbox en el datagridview
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Add(TxtRadicado.Text, Txtcod_oficina.Text, hoy.ToShortDateString(), Txtnom_oficina.Text, Txtciudad.Text, Txtcedula.Text, Txtnombre.Text, TxtNit2.Text, TxtNom_entidad2.Text, TxtValor2.Text, Txtobligacion2.Text, Txtscoring.Text, Txtnom_gestor.Text, Txtcoordinador.Text, Txtcuenta.Text, Txtref.Text);//agregar informacion de los textbox en el datagridview
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Add(TxtRadicado.Text, Txtcod_oficina.Text, hoy.ToShortDateString(), Txtnom_oficina.Text, Txtciudad.Text, Txtcedula.Text, Txtnombre.Text, TxtNit3.Text, TxtNom_entidad3.Text, TxtValor3.Text, Txtobligacion3.Text, Txtscoring.Text, Txtnom_gestor.Text, Txtcoordinador.Text, Txtcuenta.Text, Txtref.Text);//agregar informacion de los textbox en el datagridview
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Add(TxtRadicado.Text, Txtcod_oficina.Text, hoy.ToShortDateString(), Txtnom_oficina.Text, Txtciudad.Text, Txtcedula.Text, Txtnombre.Text, TxtNit4.Text, TxtNom_entidad4.Text, TxtValor4.Text, Txtobligacion4.Text, Txtscoring.Text, Txtnom_gestor.Text, Txtcoordinador.Text, Txtcuenta.Text, Txtref.Text);//agregar informacion de los textbox en el datagridview
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Add(TxtRadicado.Text, Txtcod_oficina.Text, hoy.ToShortDateString(), Txtnom_oficina.Text, Txtciudad.Text, Txtcedula.Text, Txtnombre.Text, TxtNit5.Text, TxtNom_entidad5.Text, TxtValor5.Text, Txtobligacion5.Text, Txtscoring.Text, Txtnom_gestor.Text, Txtcoordinador.Text, Txtcuenta.Text, Txtref.Text);//agregar informacion de los textbox en el datagridview
+        }
+
+        private void pictureBox17_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Add(TxtRadicado.Text, Txtcod_oficina.Text, hoy.ToShortDateString(), Txtnom_oficina.Text, Txtciudad.Text, Txtcedula.Text, Txtnombre.Text, TxtNit6.Text, TxtNom_entidad6.Text, TxtValor6.Text, Txtobligacion6.Text, Txtscoring.Text, Txtnom_gestor.Text, Txtcoordinador.Text, Txtcuenta.Text, Txtref.Text);//agregar informacion de los textbox en el datagridview
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Add(TxtRadicado.Text, Txtcod_oficina.Text, hoy.ToShortDateString(), Txtnom_oficina.Text, Txtciudad.Text, Txtcedula.Text, Txtnombre.Text, TxtNit7.Text, TxtNom_entidad7.Text, TxtValor7.Text, Txtobligacion7.Text, Txtscoring.Text, Txtnom_gestor.Text, Txtcoordinador.Text, Txtcuenta.Text, Txtref.Text);//agregar informacion de los textbox en el datagridview
+        }
+
+        private void pictureBox19_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Add(TxtRadicado.Text, Txtcod_oficina.Text, hoy.ToShortDateString(), Txtnom_oficina.Text, Txtciudad.Text, Txtcedula.Text, Txtnombre.Text, TxtNit8.Text, TxtNom_entidad8.Text, TxtValor8.Text, Txtobligacion8.Text, Txtscoring.Text, Txtnom_gestor.Text, Txtcoordinador.Text, Txtcuenta.Text, Txtref.Text);//agregar informacion de los textbox en el datagridview
         }
     }
 }
